@@ -16,9 +16,13 @@ Then we can adpot the C extended version as a MediaWiki's extension. The communi
 然后我们会为C扩展的版本制作MediaWiki扩展。并采用SOAP来实现PHP和Python之间的通讯。
 
 An example
-python setup.py build # first we build it
-mv build/lib.linux-i686-2.6/langconv ./tests # then we move the converter.so/converter.dll to tests directory
-cd tests
-python test.py # you can test this script
+
+    python setup.py build # first we build it
+    mv build/lib.linux-i686-2.6/langconv ./tests # then we move the converter.so/converter.dll to tests directory
+    cd tests
+    python test.py # you can test this script
+
+
 Known problem
-# The efficiency of RuleParser is very poor. Perhaps needs to be rewritten in C too.
+
+The efficiency of RuleParser is very poor. Perhaps needs to be rewritten in C too.
