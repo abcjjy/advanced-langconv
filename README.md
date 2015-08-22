@@ -26,7 +26,7 @@ Then we can adpot the C extended version as a MediaWiki's extension. The communi
 ## Usage
 ```python
 import langconv
-cvt = langconv.ConverterHandler("zh-hans") # valid variants are defined in settings module
+cvt = langconv.ConverterHandler("zh-hans") # valid variants are defined in settings.py
 print cvt.convert_to('zh-hant', u'秒表表达') # output 秒錶表達
 ```
 
